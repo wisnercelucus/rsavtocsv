@@ -1,8 +1,7 @@
-
-#install.packages("foreign")
+install.packages("foreign")
 
 library(foreign)
-dataset <- read.spss("./data/sleep.sav", to.data.frame = T)
+dataset <- read.spss("./data/sleep.sav", to.data.frame = TRUE)
 
 #convert the named vector variable.labels to DataFrame
 dataset.labels <- as.data.frame(attr(dataset, "variable.labels")) 
@@ -37,9 +36,16 @@ colnames(dataset) <- questions
 
 #Verify that everything works perfectly
 View(dataset)
+<<<<<<< HEAD
 
 #save the file to csv for exchange.
-write.csv(dataset, file="/path/sleep_corr.csv", row.names = F)
+write.csv(dataset, file="/path/sleep_corr.csv", row.names = FALSE)
 
+=======
+>>>>>>> eb11688dae366e84c2f2f58ceccae233570c7aff
 
+#save the file to csv for exchange.
+write.csv(dataset, file="/path/sleep_corr.csv", row.names = FALSE)
+
+#Happy learning
 
