@@ -2,12 +2,9 @@
 title: "How to SWAP questions' codes with questions' labels from SPSS files in R"
 author: 'Author: Wisner CELUCUS'
 date: "March 11, 2020"
-output:
-  html_document: default
-  pdf_document: default
 ---
 
-```{r setup, include=FALSE}
+```{r setup, echo=FALSE, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
