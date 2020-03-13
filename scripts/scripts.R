@@ -29,7 +29,7 @@ swap_qc_l <- function(q_codes, q_labels){
 question_codes <- as.character(colnames(dataset))
 
 #Call the swap_qc_l function
-questions <- swap_qn_l(question_codes,labels)
+questions <- swap_qc_l(question_codes,labels)
 
 #rename the columns names of the initial dataframe (dataset)
 colnames(dataset) <- questions
